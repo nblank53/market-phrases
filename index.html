@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Market Phrases</title>
+  <meta name="description" content="Christmas market travel phrases for France, Switzerland and Italy">
+  <meta name="theme-color" content="#14532d">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Phrases">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    try { const t = localStorage.getItem('mp.theme'); if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+</head>
+<body>
+  <header class="topbar">
+    <a href="#/" class="brand" aria-label="Home">★ Market Phrases</a>
+    <button id="themeBtn" class="icon-btn" type="button" aria-label="Change theme" title="Theme">◐</button>
+  </header>
+
+  <main id="view" tabindex="-1">
+    <p class="muted center pad">Loading phrases…</p>
+  </main>
+
+  <nav class="tabbar" aria-label="Main">
+    <a href="#/" data-tab="home"><span aria-hidden="true">⌂</span>Practice</a>
+    <a href="#/progress" data-tab="progress"><span aria-hidden="true">▤</span>Progress</a>
+    <a href="#/trip" data-tab="trip"><span aria-hidden="true">✈</span>Trip</a>
+  </nav>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
